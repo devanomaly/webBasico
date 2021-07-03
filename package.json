@@ -1,0 +1,20 @@
+{
+  "name": "webBasico",
+  "version": "1.0.0",
+  "description": "Reaprendendo CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devanomaly/webBasico.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devanomaly/webBasico/issues"
+  },
+  "homepage": "https://github.com/devanomaly/webBasico#readme"
+}
