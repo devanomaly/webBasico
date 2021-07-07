@@ -8,13 +8,113 @@
   <title>Inline Style</title>
 
   <style type="text/css">
+    #navbar {
+      background: rgba(39, 39, 245, 0.733);
+    }
+    #container-conteudo {
+      /* display: flexbox;  */
+      /* ^ orientado em coluna (?)*/
+      /* flex-wrap: wrap; */
+      display: block;
+      /* ^ orientado em linha (?) */
+      /* column-count: 3; */
+      /* width: 90%; */
+      border: 15px solid green;
+      /* font */
+      /* flex-wrap: wrap;
+      overflow-wrap: normal; */
+    }
 
+    .conteudo {
+      background: rgba(226, 28, 28, 0.856);
+      padding: 5px;
+      /* column-width: 150px; */
+      /* width: 100%; */
+    }
+
+    .produto {
+      background: gray;
+      /* margin-top: 10px; */
+      border: 5px solid gold;
+      margin: 10px;
+      padding: 15px;
+      text-align: justify;
+      color: azure; 
+    }
   </style>
 
 </head>
 
 <body>
-  
+
+  <div id="navbar">
+    <img src="../imagens/amazon.png" width="200" alt="Logomarca">
+    <ul>
+      <li>Home</li>
+      <li>Novidades</li>
+      <li>Fale Conosco</li>
+    </ul>
+  </div>
+
+  <div id="container-conteudo">
+
+    <div class="conteudo">
+      <div class="produto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at enim quae qui corrupti dolorem illum quia quod sunt dolor quo dolores accusamus error cumque, a blanditiis? Libero, modi quis!</div>
+      <div class="produto">Produto2</div>
+      <div class="produto">Produto3</div>
+    </div>
+    <div class="conteudo">
+      <div class="produto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at enim quae qui corrupti dolorem illum quia quod sunt dolor quo dolores accusamus error cumque, a blanditiis? Libero, modi quis!</div>
+      <div class="produto">Produto2</div>
+      <div class="produto">Produto3</div>
+    </div>
+    <div class="conteudo">
+      <div class="produto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at enim quae qui corrupti dolorem illum quia quod sunt dolor quo dolores accusamus error cumque, a blanditiis? Libero, modi quis!</div>
+      <div class="produto">Produto2</div>
+      <div class="produto">Produto3</div>
+    </div>
+    <div class="conteudo">
+      <div class="produto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at enim quae qui corrupti dolorem illum quia quod sunt dolor quo dolores accusamus error cumque, a blanditiis? Libero, modi quis!</div>
+      <div class="produto">Produto2</div>
+      <div class="produto">Produto3</div>
+    </div>
+
+    <div class="conteudo">
+      <div class="produto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at enim quae qui corrupti dolorem illum quia quod sunt dolor quo dolores accusamus error cumque, a blanditiis? Libero, modi quis!</div>
+      <div class="produto">Produto2</div>
+      <div class="produto">Produto3</div>
+    </div>
+
+    <div class="conteudo">
+      <div class="produto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at enim quae qui corrupti dolorem illum quia quod sunt dolor quo dolores accusamus error cumque, a blanditiis? Libero, modi quis!</div>
+      <div class="produto">Produto2</div>
+      <div class="produto">Produto3</div>
+    </div>
+    <div class="conteudo">
+      <div class="produto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at enim quae qui corrupti dolorem illum quia quod sunt dolor quo dolores accusamus error cumque, a blanditiis? Libero, modi quis!</div>
+      <div class="produto">Produto2</div>
+      <div class="produto">Produto3</div>
+    </div>
+    <div class="conteudo">
+      <div class="produto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at enim quae qui corrupti dolorem illum quia quod sunt dolor quo dolores accusamus error cumque, a blanditiis? Libero, modi quis!</div>
+      <div class="produto">Produto2</div>
+      <div class="produto">Produto3</div>
+    </div>
+    <div class="conteudo">
+      <div class="produto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at enim quae qui corrupti dolorem illum quia quod sunt dolor quo dolores accusamus error cumque, a blanditiis? Libero, modi quis!</div>
+      <div class="produto">Produto2</div>
+      <div class="produto">Produto3</div>
+    </div>
+    <div class="conteudo">
+      <div class="produto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum at enim quae qui corrupti dolorem illum quia quod sunt dolor quo dolores accusamus error cumque, a blanditiis? Libero, modi quis!</div>
+      <div class="produto">Produto2</div>
+      <div class="produto">Produto3</div>
+    </div>
+  </div>
+
 </body>
 
 </html>
+
+<!-- span é tipo 'inline' -->
+<!-- div é tipo 'block', mas pode ser feito comportar como 'inline' via display: inline por exemplo; mas sua natureza fundamental não muda diante dos olhos do html/processador html -->
