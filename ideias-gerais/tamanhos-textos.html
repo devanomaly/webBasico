@@ -8,14 +8,37 @@
   <title>Tamanhos de textos</title>
 
   <style type="text/css">
+    /* 
+    px -> tamanho fixo
+    % -> tamanho relativo (a o que?)
+    ^ é em relação ao tamanho padrão do browser! Tipicamente, 16px (;
+    em -> tamanho relativo ao container pai [EXTREMAMENTE ÚTIL PARA MANTER PROPORÇÕES!!!]
+   */
+    /* .texto{
+      font-size: 100%;
+    } */
+    div {
+      font-size: 50px;
+    }
 
+    .texto {
+      font-size: 0.5em;
+      /* (50%, nesse caso, da font-size na div!) */
+    }
   </style>
 
 </head>
 
 <body>
 
+  <div>
+    <p class="texto">
+      Conteúdo
+    </p>
+    <p>
+      Conteúdo
+    </p>
+  </div>
 </body>
 
 </html>
-

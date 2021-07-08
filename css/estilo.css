@@ -1,0 +1,11 @@
+.texto {
+  color: #707;
+  background-color: bisque;
+  text-align: center;
+  font-size: 5px;
+}
+.texto:hover {
+  border: chocolate dashed 16px;
+  font-size: 32px;
+  font-weight: 700;
+}
