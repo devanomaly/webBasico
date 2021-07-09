@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Elementos Flutuantes</title>
+  <meta charset="UTF-8">
+
+  <style type="text/css">
+    .conteudo {
+      border: 5px solid salmon;
+      background-color: sandybrown;
+      font-weight: 800;
+      vertical-align: middle;
+      font-size: 30px;
+      text-align: center;
+      line-height: 200px;
+      /* line-height precisa ser igual a width para que o vertical align middle funcione como esperado (isto é, no meio xD)
+      Isso é bem mais facil com flexbox... */
+      margin: 10px 0 0px 10px;
+      width: 200px;
+      /* padding-top: 10; */
+      height: 200px;
+      float: left;
+    }
+
+    .conteudo1 {
+      border: 5px solid salmon;
+      background-color: rgb(129, 67, 13);
+      font-weight: 800;
+      vertical-align: middle;
+      font-size: 30px;
+      text-align: center;
+      line-height: 200px;
+      /* line-height precisa ser igual a width para que o vertical align middle funcione como esperado (isto é, no meio xD)
+      Isso é bem mais facil com flexbox... */
+      margin: 10px 0 0px 10px;
+      width: 400px;
+      /* padding-top: 10; */
+      height: 200px;
+      float: left;
+    }
+
+    #container {
+      border: seagreen solid 10px;
+      background-color: steelblue;
+    }
+
+    .clear-both {
+      clear: both;
+    }
+
+    .paragrafo-dentro {
+      color: rgb(0, 0, 0);
+      font-size: 1.5em;
+      font-weight: 900;
+    }
+
+    .paragrafo-fora {
+      color: rgb(0, 0, 0);
+      font-size: 10em;
+      font-weight: 900;
+      margin: 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div class="conteudo1">
+      Conteúdo 1
+    </div>
+
+    <div class="conteudo">
+      Conteúdo 2
+    </div>
+    <p class="paragrafo-dentro">Esse texto segue o "fluxo" de float left! Isso acontece sempre que você botar conteudo
+      em seguida de um elemento com float left ou right: esse carinha herdará o mesmo float.
+    Mas esse paragrafo aqui também quebrou o fluxo!</p>
+<!-- BRINQUE comentando e descomentando a div de conteudo3 para ver o que acontece; também é interessante!-->
+    <div style="height: 400px; line-height: 400px;" class="conteudo">
+      <!-- Note que o style aqui declarado substituiu o da classe; perceba tambem que nao importa se voce escreve "style" antes ou depois de "class" no argumento da div -->
+      Conteúdo 3
+    </div>
+    <!-- clear: both; serve para "limpar" o float tanto left quanto right; se quiser limpar apenas left => clear: left;-->
+    <p class="paragrafo-dentro">
+      Note que se você comentar a div com classe <em>clear-both</em>, o elemento imediatamente seguinte ao paragrafo irá
+      "perder" o fluxo original, e começar o seu próprio! <br>
+      No nosso caso, isso significa que o a caixa "Conteúdo 3" ficará meio dentro meio fora do conteiner
+      azul (;
+    </p>
+    <div class="clear-both"></div>
+  </div>
+  <p class="paragrafo-fora">TOP!</p>
+</body>
