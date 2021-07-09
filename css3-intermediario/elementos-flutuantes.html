@@ -76,20 +76,20 @@
     </div>
     <p class="paragrafo-dentro">Esse texto segue o "fluxo" de float left! Isso acontece sempre que você botar conteudo
       em seguida de um elemento com float left ou right: esse carinha herdará o mesmo float.
-    Mas esse paragrafo aqui também quebrou o fluxo!</p>
-<!-- BRINQUE comentando e descomentando a div de conteudo3, modificando ou mantendo sua posição nesse documento, para ver o que acontece; também é interessante!-->
-<!-- clear: both; serve para "limpar" o float tanto left quanto right; se quiser limpar apenas left => clear: left;-->
-<p class="paragrafo-dentro">
-  Note que se você comentar a div com classe <em>clear-both</em>, o elemento imediatamente seguinte ao paragrafo irá
-  "perder" o fluxo original, e começar o seu próprio! <br>
-  <div style="height: 400px; line-height: 400px;" class="conteudo">
-    <!-- Note que o style aqui declarado substituiu o da classe; perceba tambem que nao importa se voce escreve "style" antes ou depois de "class" no argumento da div -->
-    Conteúdo 3
-  </div>
+      Mas esse paragrafo aqui também quebrou o fluxo!</p>
+    <!-- BRINQUE comentando e descomentando a div de conteudo3, para ver o que acontece; também é interessante!-->
+    <!-- clear: both; serve para "limpar" o float tanto left quanto right; se quiser limpar apenas left => clear: left;-->
+    <div style="height: 400px; line-height: 400px;" class="conteudo">
+      <!-- Note que o style aqui declarado substituiu o da classe; perceba tambem que nao importa se voce escreve "style" antes ou depois de "class" no argumento da div -->
+      Conteúdo 3
+    </div>
+    <p class="paragrafo-dentro">
+      Note que se você comentar a div com classe <em>clear-both</em>, o elemento imediatamente seguinte ao paragrafo irá
+      "perder" o fluxo original, e começar o seu próprio! <br>
       No nosso caso, isso significa que o a caixa "Conteúdo 3" ficará meio dentro meio fora do conteiner
-      azul (;
+      azul [ dependendo de onde voce posicione ela no html, claro (; ]
     </p>
-    <!-- <div class="clear-both"></div> -->
+    <div class="clear-both"></div>
   </div>
   <p class="paragrafo-fora">TOP!</p>
 </body>
