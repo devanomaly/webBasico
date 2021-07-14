@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Veja o arquivo "ideia-galeria-modern-clearfix" para uma solução alternativa para os mesmos problemas de float aqui apresentados -->
+
+<head>
+  <title>Ideias Galeria EXPLORAÇÃO</title>
+  <meta charset="UTF-8">
+
+  <style type="text/css">
+    body {
+      background-color: #f4f4f4;
+    }
+
+    #principal {
+      width: 920px;
+      border: 1px solid red;
+      /* float: left; */
+    }
+
+    .noticia {
+      background-color: #e5e5e5;
+      padding: 5px;
+      width: 280px;
+      margin: 7px;
+      float: left;
+    }
+
+    .imagem-galeria {
+      background-color: white;
+      width: 265px;
+      padding: 5px;
+      float: left;
+      margin: 15px;
+    }
+
+    .clear-float {
+      clear: both;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="principal">
+    <div>
+
+      <div class="noticia">
+        <h2>1)Lorem ipsum e tudo mais</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam in, eos distinctio quidem maxime velit
+          molestias
+        </p>
+        <a href="">Veja mais</a>
+      </div>
+
+      <div class="noticia">
+        <h2>2)Lorem ipsum e tudo mais</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam in, eos distinctio quidem maxime velit
+          molestias
+        </p>
+        <a href="">Veja mais</a>
+      </div>
+
+      <div class="noticia">
+        <h2>3)Lorem ipsum e tudo mais</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam in, eos distinctio quidem maxime velit
+          molestias
+        </p>
+        <a href="">Veja mais</a>
+      </div>
+
+      <div class="noticia">
+        <h2>4)Lorem ipsum e tudo mais</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam in, eos distinctio quidem maxime velit
+          molestias
+        </p>
+        <a href="">Veja mais</a>
+      </div>
+
+      <!-- <h2 class="clear-float"></h2> -->
+
+      <div class="noticia">
+        <h2>5)Lorem ipsum e tudo mais</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam in, eos distinctio quidem maxime velit
+          molestias
+        </p>
+        <a href="">Veja mais</a>
+      </div>
+
+      <div class="noticia">
+        <h2>6)Lorem ipsum e tudo mais</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam in, eos distinctio quidem maxime velit
+          molestias
+        </p>
+        <a href="">Veja mais</a>
+      </div>
+      <!-- TODO: vale a pena brincar com esses dois clears (o anterior e o da linha seguinte), comentando e descomentando...
+      Entender clear não é trivial -->
+      <!-- Veja https://www.w3schools.com/css/css_float_clear.asp para detalhes e veja também https://www.w3schools.com/howto/howto_css_clearfix.asp para uma abordagem mais moderna-->
+      <h2 class="clear-float"></h2>
+
+      <div class="noticia">
+        <h2>7)Lorem ipsum e tudo mais</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam in, eos distinctio quidem maxime velit
+          molestias
+        </p>
+        <a href="">Veja mais</a>
+      </div>
+      <div class="noticia">
+        <h2>8)Lorem ipsum e tudo mais</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam in, eos distinctio quidem maxime velit
+          molestias
+        </p>
+        <a href="">Veja mais</a>
+      </div>
+
+      <!-- TODO: pesquisar como o clear funciona "retrospectivamente"...-->
+    </div>
+
+  </div>
+</body>
