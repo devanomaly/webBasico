@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Veja o arquivo "ideia-galeria-modern-clearfix" para uma solução alternativa para os mesmos problemas de float aqui apresentados -->
+
+<head>
+  <title>Sobrepondo elementos</title>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    .conteudo1 {
+      border: 1px solid red;
+      background-color: orange;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+    }
+
+    .conteudo2 {
+      border: 1px solid red;
+      background-color: green;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 80px;
+      left: 80px;
+    }
+    .conteudo3 {
+      border: 1px solid red;
+      background-color: blue;
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top: 160px;
+      left: 160px;
+    }
+    .conteudo-hover:hover {
+      z-index: 1000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="conteudo1 conteudo-hover">
+    Conteudo1
+  </div>
+  <div class="conteudo2 conteudo-hover">
+    Conteudo2
+  </div>
+  <div class="conteudo3 conteudo-hover">
+    Conteudo3
+  </div>
+</body>
+
+</html>
