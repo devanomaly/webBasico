@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Veja o arquivo "ideia-galeria-modern-clearfix" para uma solução alternativa para os mesmos problemas de float aqui apresentados -->
+
+<head>
+  <title>Tipos de Elementos</title>
+  <meta charset="UTF-8">
+  <style type="text/css">
+    .definicao {
+      text-align: center;
+      margin: 20px;
+      font-size: 1.5em;
+    }
+    .borda {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p class="definicao">
+      Os comportamentos padrão são:
+      <br> 1) Block => cobre toda width, sequenciados formando uma coluna (isto é, cada novo elemento é uma nova linha)
+    </p>
+
+    <p class="definicao">
+      2) Inline => cobre apenas o tamanho do conteúdo que encerra, sequenciados formando uma linha (isto é, cada novo
+      elemento é uma nova coluna)
+    </p>
+
+    <p class="definicao">
+      3) Inline-Block => cobre apenas o tamanho do conteúdo que encerra, sequenciados formando uma coluna (isto é, cada
+      novo elemento é uma nova linha), apenas quando o tamanho da width tenha sido atingida (devido ao preenchimento do block)
+    </p>
+  </div>
+  <h1 style="text-align: center;">EXEMPLOS</h1>
+  <h2 class="borda">Bloco1</h2>
+  <h2 class="borda">Bloco2</h2>
+  <span class="borda">Inline 1</span>
+  <span class="borda">Inline 2</span>
+  <!-- comportamentos podem ser alterados mediante uso da propriedade css display -->
+
+</body>
+</html>
