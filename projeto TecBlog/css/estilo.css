@@ -1,0 +1,51 @@
+/* INICIO Limpando formatações padrão */
+* {
+  margin: 0;
+  padding:0 ;
+}
+/* FIM Limpando formatações padrão */
+
+body {
+  font-size: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #e6e6e6 ;
+}
+
+/* LAYOUT - INICIO */
+#area-cabecalho {
+  background-color: #f7b600;
+  padding: 15px;
+  text-align: center;
+}
+
+#area-logo, #area-menu {
+  padding: 10px;
+}
+
+/* FORMATAÇÃO MENU - INICIO */
+a {
+  text-decoration: none;
+}
+a:link, a:visited {
+  color: #FFF;
+  padding: 8px 12px;
+}
+a:hover {
+  color: #f7b600;
+  background-color: #FFF;
+}
+/* FORMATAÇÃO MENU - FIM */
+
+
+/* LAYOUT - FIM */
+
+/* FORMATAÇÕES EM GERAL - INICIO*/
+h1 {
+  color: #4e4e4e;
+  font-size: 2.5em;
+}
+
+.branco {
+  color: white;
+}
+/* FORMATAÇÕES EM GERAL - FIM*/
