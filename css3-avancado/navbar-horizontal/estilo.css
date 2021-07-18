@@ -1,0 +1,16 @@
+ul#navbar-horizontal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+ul#navbar-horizontal li {
+  float: left;
+  padding: 0.5em 2em;
+  background: rgb(42, 158, 187) url("imagens/fundo-horizontal.png") repeat-x left top;
+} 
+ul#navbar-horizontal a {
+  display: block;
+  text-decoration: none;
+} 
