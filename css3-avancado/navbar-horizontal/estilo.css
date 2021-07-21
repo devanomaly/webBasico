@@ -1,16 +1,33 @@
-ul#navbar-horizontal {
+ul.navbar-horizontal {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 720px;
+  background: #159cb0 url("imagens/fundo-horizontal.png") repeat-x;
+  /* border: 1px solid black; */
   float: left;
+  /* align-self: center; ?? */
 }
 
-ul#navbar-horizontal li {
+ul.navbar-horizontal li {
+  /* display: inline; */
+  /* observe que se deixar display inline sem o float (aqui e na ul), há um espaçamento padrão! */
   float: left;
-  padding: 0.5em 2em;
-  background: rgb(42, 158, 187) url("imagens/fundo-horizontal.png") repeat-x left top;
-} 
-ul#navbar-horizontal a {
+}
+ul.navbar-horizontal li a {
   display: block;
+  padding: 0 2em;
+  line-height: 2em;
   text-decoration: none;
-} 
+  color: #fff;
+  background: url('imagens/divisor.png') repeat-y left top;
+}
+ul.navbar-horizontal li:first-child a{
+  /* fixed!!! */
+  background-image: none;
+}
+ul.navbar-horizontal .selecionado, ul.navbar-horizontal li a:hover {
+  /* background-position: right bottom; */
+  background-color: #44cade;
+  color: #085662;
+}
