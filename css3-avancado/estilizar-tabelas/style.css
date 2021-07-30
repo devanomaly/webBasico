@@ -1,0 +1,36 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.minhaTabela {
+  width: 600px;
+  border-collapse: collapse; 
+  /* border-collapse poderia ser "separate", que eh o default */
+}
+
+.minhaTabela td, 
+.minhaTabela th {
+  padding: 7px;
+}
+
+.minhaTabela th {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #111;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 90%;
+}
+.minhaTabela tr:nth-child(even){
+  /* efeitinho para alternar cores: pega as children even (2, 4, 6 ... */
+  background-color: lightgray;
+}
+.minhaTabela td:last-child,
+.minhaTabela th:last-child {
+  /* alinhar á direita o header e o valor da coluna preço */
+  text-align: right;
+}
+
+.minhaTabela tr:hover {
+  /* precisa ser declarada por último, se não tr:nth-child(even) sobrepõe */
+  background-color: lightgreen;
+}
