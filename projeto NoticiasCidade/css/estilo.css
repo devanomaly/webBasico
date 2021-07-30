@@ -1,0 +1,12 @@
+/* INICIO Limpando formatações padrão */
+* {
+  margin: 0;
+  padding:0 ;
+}
+/* FIM Limpando formatações padrão */
+
+body {
+  font-size: 1em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #fff url("../imagens/fundo.png") repeat-x;
+}
