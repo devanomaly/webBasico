@@ -1,0 +1,33 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.meuFormulario fieldset {
+  padding: 1em;
+  margin: 1em 0;
+  background-color: #f8f8f8;
+}
+
+.meuFormulario legend {
+  font-weight: bold;
+}
+
+.meuFormulario label {
+  display: block;
+  /* alteramos para display block para que o label fique acima do input!!! */
+  cursor: pointer;
+  /* cursor: pointer é pra mudar a imagenzinha do cursor => vira aquela mãozinha apontando com o indicador, indicando que se trata de algo "clickável" =D */
+}
+
+.meuFormulario input[type="radio"], .meuFormulario input[type="checkbox"], .meuFormulario input[type="submit"] {
+  width: auto;
+}
+
+.meuFormulario input[type="text"] {
+  width: 20em;
+}
+
+.meuFormulario textarea {
+  width: 20em;
+  height: 10em;
+}

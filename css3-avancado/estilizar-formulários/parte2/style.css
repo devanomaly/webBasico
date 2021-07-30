@@ -1,0 +1,60 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #643d87 url("images/fundo.jpg") no-repeat top center;
+}
+
+#container {
+  /* como faze-lo fluido? */
+  width: 50%;
+  height: 300px;
+  /* TODO: entender por quê o height não "aceita" porcentagem...  */
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 8%;
+  -webkit-border-radius: 8%;
+  -moz-border-radius: 8%;
+  margin: 0 auto;
+  margin-top: 120px;
+  text-align: center;
+  /* MIRACULOSAMENTE, text-align: center; vai centralizar o img... */
+}
+
+#container img {
+  width: 100px;
+  align-content: center;
+  margin-bottom: 30px;
+  margin-top: -40px;
+}
+
+#container input {
+  height: 40px;
+  width: 75%;
+  font-size: 18px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding-left: 40px;
+  border: none;
+  /* TODO: muito importante entender essas configurações de ícones! */
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+#container input[name="email"] {
+background-image: url("images/icone-usuario.png");
+}
+#container input[name="senha"] {
+background-image: url("images/icone-cadeado.png");
+}
+#container input[type="submit"] {
+  color: #fff;
+  font-weight: bold;
+  background-color: #f79300;
+  border:  2px solid #db7d00;
+  padding: 5px 20px;
+  height: 45px;
+  /* width: 90%; */
+  background: linear-gradient(to bottom, #faa600, #f68a00);
+  background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+  background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+  background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+}
+

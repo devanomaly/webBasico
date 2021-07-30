@@ -32,5 +32,6 @@ body {
 
 .minhaTabela tr:hover {
   /* precisa ser declarada por último, se não tr:nth-child(even) sobrepõe */
-  background-color: lightgreen;
+  background-color: rgb(144, 177, 238);
+
 }
