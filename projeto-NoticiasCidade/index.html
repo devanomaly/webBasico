@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Projetinho bem simples, sem responsividade ou fluidez... -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias Cidade - Seu site de notícias</title>
+  <link rel="stylesheet" type='text/css' href="css/estilo.css">
+</head>
+
+<body class="home">
+  <!-- INÍCIO CONTAINER -->
+  <div id="container">
+    <!-- INÍCIO TOPO -->
+    <div id="topo">
+      <h1 class="logo">Notícias Cidade</h1>
+      <ul id="navbar">
+        <li>
+          <a id="home" href="index.html">Início</a>
+        </li>
+        <li>
+          <a id="brasil" href="brasil.html">Brasil</a>
+        </li>
+        <li>
+          <a id="internacional" href="internacional.html">Internacional</a>
+        </li>
+        <li>
+          <a id="economia" href="economia.html">Economia</a>
+        </li>
+        <li>
+          <a id="saude" href="saude.html">Saúde</a>
+        </li>
+        <li>
+          <a id="ciencia" href="ciencia.html">Ciência</a>
+        </li>
+        <li>
+          <a id="fotos" href="fotos.html">Fotos</a>
+        </li>
+      </ul>
+    </div>
+    <!-- FIM TOPO -->
+
+    <!-- INÍCIO CONTEÚDO -->
+    <div id="conteudo">
+      <!-- Primário => acessibilidade! -->
+      <div id="primario">
+        <!-- INICIO CAIXA -->
+        <div class="caixa">
+          <h2>Destaque</h2>
+          <div class="caixa-conteudo">
+            <h3>Nova legislação!</h3>
+            <img class="imagem-principal" src="imagens/taxi.jpg" alt="taxi" width="100%"> 
+            <!-- LEMBRE-SE o ideal eh preparar imagens com os tamanhos pré-definidos, afinal diminuir via width nao altera o tamanho que terá de ser carregado pelo src!!! -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio tempora excepturi consectetur, nam unde nesciunt doloribus consequuntur ratione, cupiditate consequatur, accusamus error molestiae sequi fugit ipsam aliquid similique deleniti ipsum!</p>
+            <a href="">Leia mais</a>
+          </div>
+        </div>
+        <!-- FIM CAIXA -->
+      </div>
+      <div id="secundario">
+        <!-- INICIO CAIXA -->
+        <div class="caixa">
+          <h2>Última entrevista</h2>
+          <div class="caixa-conteudo">
+            <div>conteudo</div>
+            <div>conteudo</div>
+            <div>conteudo</div>
+          </div>
+        </div>
+        <!-- FIM CAIXA -->
+      </div>
+      <!-- INÍCIO LATERAL -->
+      <div id="lateral">
+        <!-- INICIO CAIXA -->
+        <div class="caixa">
+          <h2>Entrevistas</h2>
+          <div class="caixa-conteudo">
+            <ul>
+              <li><a href="">Pessoa A</a></li>
+              <li><a href="">Pessoa B</a></li>
+              <li><a href="">Pessoa C</a></li>
+              <li><a href="">Pessoa D</a></li>
+              <li><a href="">Pessoa E</a></li>
+              <li><a href="">Pessoa F</a></li>
+              <li><a href="">Pessoa G</a></li>
+              <li><a href="">Pessoa H</a></li>
+              <li><a href="">Pessoa I</a></li>
+              <li><a href="">Pessoa J</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- FIM CAIXA -->
+        <!-- INICIO CAIXA -->
+        <div class="caixa">
+          <h2>News</h2>
+          <div class="caixa-conteudo">
+            <form>
+              <div>
+                <label for="email">Newsletter</label>
+                <input type="text" name="email" id="email" placeholder="e-mail">
+              </div>
+              <div>
+                <input type="submit" value="Cadastrar">
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- FIM CAIXA -->
+      </div>
+      <!-- FIM LATERAL -->
+    </div>
+    <!-- FIM CONTEÚDO -->
+  </div>
+  <!-- FIM CONTAINER -->
+  <!-- inicio rodape -->
+  <div id="container-rodape" style="clear: both;">
+    <div id="rodape">
+      &copy; Copyright 2000-2021 Notícias Cidade
+    </div>
+  </div>
+  <!-- fim rodape -->
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+/* INICIO Limpando formatações padrão */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* FIM Limpando formatações padrão */
+
+/* INICIO FORMATAÇÕES GERAIS */
+h3 {
+  /* TODO: parei aqui 30/08 */
+  text-transform: uppercase;
+  display: inline;
+  font-size: 0.8em;
+  padding: 3px;
+}
+
+img {
+  border: 2px solid #dfdfdf;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+input {
+  margin-top: 5px;
+  padding: 5px;
+  width: 140px;
+  font-size: 0.9em;
+  background-color: #fff;
+}
+
+input[type="submit"]{
+  width: 90px;
+  color: #fff;
+  background-color: #b10333;
+  border: 2px solid #870529;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+/* FIM FORMATAÇÕES GERAIS */
+
+/* CONTAINER PRINCIPAL INICIO */
+
+#container {
+  width: 750px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+/* CONTAINER PRINCIPAL FIM */
+
+/* CONFIGURANDO TOPO INÍCIO */
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #fff url("../imagens/fundo.png") repeat-x;
+}
+
+#topo {
+  height: 150px;
+  /* border: 1px solid red; */
+  background: url("../imagens/detalhe-topo.png") no-repeat right top;
+  padding-top: 25px;
+}
+
+.logo {
+  width: 152px;
+  height: 66px;
+  background: url('../imagens/logo.png') no-repeat center;
+  text-indent: -3000px;
+  /* esconder o conteudo do view quando css funcionar */
+}
+
+/* INÍCIO Editando a navbar */
+
+ul#navbar {
+  background: #b10333;
+  margin-top: 30px;
+  float: left;
+}
+
+ul#navbar li {
+  float: left;
+}
+
+ul#navbar a {
+  font-size: 0.9em;
+  display: block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  line-height: 2.1em;
+  color: white;
+  background: url("../imagens/divisor.png") repeat-y left center;
+  /* TODO: deixar repeat-y ou botar no-repeat ??? */
+}
+
+ul#navbar li:first-child a {
+  /* removendo o divisor do primeiro link... */
+  background: none;
+}
+
+ul#navbar a:hover {
+  color: #69001d;
+}
+
+body.home #navbar a#home, body.brasil #navbar a#brasil, body.internacional #navbar a#internacional, body.economia #navbar a#economia, body.saude #navbar a#saude, body.ciencia #navbar a#ciencia, body.fotos #navbar a#fotos {
+  color: white;
+  background-color: #de003e;
+  cursor: text;
+}
+
+/* FIM Editando a navbar */
+
+/* CONFIGURANDO TOPO FIM */
+
+/* INÍCIO LAYOUT 3 COLUNAS */
+
+#conteudo {
+  margin-top: 60px;
+  background: #f5f5f5;
+}
+
+#lateral {
+  float: left;
+  width: 180px;
+  /*TODO: Bizarro... ainda nao entendi de fato esse truque, pois 0 750px 20px 0 nao funciona... e me parece que seria equivalente =( */
+  margin: 0 0 20px -750px;
+}
+
+#primario {
+  width: 270px;
+  float: left;
+  margin: 0 0 20px 195px;
+}
+
+#duas-colunas #primario {
+  width: 555px;
+}
+
+#uma-coluna #primario {
+  width: 750px;
+  margin: 0 0 20px 0;
+}
+
+#secundario {
+  float: left;
+  margin: 0 0 20px 15px;
+  width: 270px;
+}
+
+/* FIM LAYOUT 3 COLUNAS */
+
+/* INÍCIO LAYOUTS CAIXAS */
+
+.caixa {
+  margin: 10px 0;
+  padding: 5px;
+  background: #f3f3f3 url("../imagens/fundo-caixa.png");
+}
+
+.caixa h2 {
+  /* TODO: lembrar desse carinha... */
+  font-size: 1em;
+  background: #294c71;
+  color: #fff;
+  padding: 5px;
+}
+
+.caixa-conteudo {
+  margin-top: 5px;
+  background-color: #fff;
+  padding: 5px;
+}
+
+/* FIM LAYOUTS CAIXAS */
+
+/* INÍCIO BARRA LATERAL */
+#lateral ul a {
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 3px;
+  display: block;
+  line-height: 30px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+  /* Trickzim para setar imagem topzera */
+  background-position: left center;
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../imagens/marcador.png");
+  color: #a1a1a1;
+}
+/* FIM BARRA LATERAL */
+
+/* INÍCIO "DESTAQUE" */
+img.imagem-principal {
+  width: 98%;
+}
+/* FIM "DESTAQUE" */
+
+/* RODAPE */
+
+#container-rodape {
+  background: #294c71;
+  padding: 20px;
+}
+
+#rodape {
+  width: 750px;
+  margin: 0 auto;
+  color: #fff;
+}
